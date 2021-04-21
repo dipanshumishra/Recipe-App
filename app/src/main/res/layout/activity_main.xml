@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#E6800000"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/cravingtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="What are you craving?"
+            android:layout_marginLeft="15dp"
+            android:textColor="#090909"
+            android:textSize="28sp">
+        </TextView>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/ingredientSearchView"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/searchradius"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:queryHint="Search Ingredients..."
+            android:layout_marginLeft="15dp"
+            app:iconifiedByDefault="false">
+        </androidx.appcompat.widget.SearchView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="#D2000000"
+            android:fontFamily="sans-serif"
+            android:text="Recipes based on">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Ingredient you have"
+            android:textColor="#808088"
+            android:textSize="16sp"></TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recview2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="10dp">-->
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+
+</LinearLayout>
